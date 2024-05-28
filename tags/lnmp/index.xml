@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Lnmp on 可以吃饭了吗</title>
-    <link>http://localhost:1313/tags/lnmp/</link>
+    <link>https://meow527.github.io/tags/lnmp/</link>
     <description>Recent content in Lnmp on 可以吃饭了吗</description>
     <image>
       <title>可以吃饭了吗</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
+      <url>https://meow527.github.io/images/papermod-cover.png</url>
+      <link>https://meow527.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.126.1</generator>
     <language>zh</language>
     <copyright>2021-2024 可以吃饭了吗</copyright>
     <lastBuildDate>Tue, 02 Nov 2021 13:14:47 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/lnmp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://meow527.github.io/tags/lnmp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>yum安装lnmp</title>
-      <link>http://localhost:1313/2021/yum%E5%AE%89%E8%A3%85lnmp/</link>
+      <link>https://meow527.github.io/2021/yum%E5%AE%89%E8%A3%85lnmp/</link>
       <pubDate>Tue, 02 Nov 2021 13:14:47 +0000</pubDate>
-      <guid>http://localhost:1313/2021/yum%E5%AE%89%E8%A3%85lnmp/</guid>
+      <guid>https://meow527.github.io/2021/yum%E5%AE%89%E8%A3%85lnmp/</guid>
       <description>nginx 第一步 直接yum yum install nginx 如果是虚拟机则可能会说找不到nginx的包运行如下命令 #rpm -ivh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm cd /etc/yum.repos.d/rpm -ivh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm yum update #更新yum yum install nginx 第二步 关于nginx的启动 systemctl start nginx #启动 systemctl restart nginx #重启 systemctl stop nginx #关闭 systemctl reload nginx #重载nginx配置 安装差异 nginx -s reload(配置了全局变量) systemctl status nginx #查看运行状况 PHP 第一步 装epel源 sudo dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.3.noarch.rpm 第二步 安装yum源管理工具 yum install yum-utils #sudo dnf -y install yum-utils 如果是虚拟机在此之前可能需要如下命令 yum install epel- release -y yum install dnf 第三步 sudo dnf -y install https://dl.</description>
     </item>
     <item>
       <title>源码安装lnmp</title>
-      <link>http://localhost:1313/2021/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85lnmp/</link>
+      <link>https://meow527.github.io/2021/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85lnmp/</link>
       <pubDate>Tue, 02 Nov 2021 10:20:19 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85lnmp/</guid>
+      <guid>https://meow527.github.io/2021/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85lnmp/</guid>
       <description>lnmp 第一步创建一个总文件夹 mkdir /data/{soft,server} -p nginx 第一步 useradd www -s /sbin/nologin -M 第二步 从nginx官网下载它的包 wget http://nginx.org/download/nginx-1.6.3.tar.gz 第三步 解压nginx tar xzf nginx (tar xzf nginx-1.6.3.tar.gz) 第四步 将解压出来的nginx 放到指定目录 ./configure --prefix=/data/server/nginx] (cd nginx-1.6.3再执行该命令 linux环境下安装软件是./configure编译文件 --prefix 到指定目录) 在此期间如有报错 需要用yum安装的命令 [./configure: error: C compiler cc is not found] yum -y install gcc [he HTTP rewrite module requires the PCRE library.] yum -y install pcre-devel [./configure: error: the HTTP gzip module requires the zlib library.] yum install -y zlib-devel 第五步 编译安装 make &amp;amp;&amp;amp; make install 第六步 修改nginx的配置文件 vim /data/server/nginx/conf/nginx.</description>
     </item>
   </channel>

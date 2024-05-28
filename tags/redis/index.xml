@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Redis on 可以吃饭了吗</title>
-    <link>http://localhost:1313/tags/redis/</link>
+    <link>https://meow527.github.io/tags/redis/</link>
     <description>Recent content in Redis on 可以吃饭了吗</description>
     <image>
       <title>可以吃饭了吗</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
+      <url>https://meow527.github.io/images/papermod-cover.png</url>
+      <link>https://meow527.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.126.1</generator>
     <language>zh</language>
     <copyright>2021-2024 可以吃饭了吗</copyright>
     <lastBuildDate>Thu, 26 May 2022 11:12:30 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://meow527.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>搭建单机版redis集群</title>
-      <link>http://localhost:1313/2021/%E6%90%AD%E5%BB%BA%E5%8D%95%E6%9C%BA%E7%89%88redis%E9%9B%86%E7%BE%A4/</link>
+      <link>https://meow527.github.io/2021/%E6%90%AD%E5%BB%BA%E5%8D%95%E6%9C%BA%E7%89%88redis%E9%9B%86%E7%BE%A4/</link>
       <pubDate>Thu, 26 May 2022 11:12:30 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E6%90%AD%E5%BB%BA%E5%8D%95%E6%9C%BA%E7%89%88redis%E9%9B%86%E7%BE%A4/</guid>
+      <guid>https://meow527.github.io/2021/%E6%90%AD%E5%BB%BA%E5%8D%95%E6%9C%BA%E7%89%88redis%E9%9B%86%E7%BE%A4/</guid>
       <description>在虚拟虚拟机中搭建redis单机集群 1.创建搭载redis到文件夹 mkdir /software/server/redis/conf 2.简单记录一下单机版的redis的下载与安装(下载到指定文件夹中) #进入文件夹 cd /software #下载包 wget https://download.redis.io/releases/redis-6.0.8.tar.gz #解压文件 tar -zxvf redis-6.0.8.tar.gz cd redis-6.0.8 #升级gcc yum install centos-release-scl yum install devtoolset-7-gcc* scl enable devtoolset-7 bash #安装 make make PREFIX=/software/server/redis install #安装到指定文件夹 #复制redis配置文件 cp /software/redis-6.0.8/redis.conf /software/server/redis/conf #进入/software/server/redis 修改配置文件 cd /software/server/redis vim conf/redis.conf #将daemonize no 改为 yes就可以了 #启动redis（进入安装redis到bin目录执行 即/software/server/redis/bin下） cd /software/server/redis/bin ./redis-server /software/server/redis/conf/redis.conf #测试连接 ./redis-cli -p 6379 #关闭redis 第一个方法 （在进入./redis-cli -p 6379之后） shutdown #关闭redis 第二个方法 #查看端口pid ps -ef ｜ grep -i redis #杀掉pid kill -9 pid 3.</description>
     </item>
   </channel>

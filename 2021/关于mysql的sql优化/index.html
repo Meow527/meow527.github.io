@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -16,16 +16,16 @@ start transaction; insert into tb_test values(1,&#39;Tom&#39;); insert into tb_t
 insert into tb_test values(4,&#39;Tim&#39;); insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(3,&#39;Jerry&#39;); insert into tb_test values(5,&#39;Rose&#39;); insert into tb_test values(2,&#39;Cat&#39;); 优化后
 insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;Cat&#39;); insert into tb_test values(3,&#39;Jerry&#39;); insert into tb_test values(4,&#39;Tim&#39;); insert into tb_test values(5,&#39;Rose&#39;); 2.">
 <meta name="author" content="Jiaxin">
-<link rel="canonical" href="http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/">
+<link rel="canonical" href="https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://meow527.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://meow527.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://meow527.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://meow527.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://meow527.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/">
+<link rel="alternate" hreflang="zh" href="https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/">
 <noscript>
     <style>
         #theme-toggle,
@@ -75,14 +75,14 @@ start transaction; insert into tb_test values(1,&#39;Tom&#39;); insert into tb_t
 insert into tb_test values(4,&#39;Tim&#39;); insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(3,&#39;Jerry&#39;); insert into tb_test values(5,&#39;Rose&#39;); insert into tb_test values(2,&#39;Cat&#39;); 优化后
 insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;Cat&#39;); insert into tb_test values(3,&#39;Jerry&#39;); insert into tb_test values(4,&#39;Tim&#39;); insert into tb_test values(5,&#39;Rose&#39;); 2." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/" />
-<meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
+<meta property="og:url" content="https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/" />
+<meta property="og:image" content="https://meow527.github.io/images/papermod-cover.png" />
 <meta property="article:section" content="2021" />
 <meta property="article:published_time" content="2021-11-26T14:02:11+00:00" />
 <meta property="article:modified_time" content="2021-11-26T14:02:11+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
+<meta name="twitter:image" content="https://meow527.github.io/images/papermod-cover.png" />
 <meta name="twitter:title" content="关于mysql的sql语句的优化"/>
 <meta name="twitter:description" content="1. 优化insert语句 当进行数据的insert操作的时候，可以考虑采用以下几种优化方案。
 如果需要同时对一张表插入很多行数据时，应该尽量使用多个值表的insert语句，这种方式将大大的缩减客户端与数据库之间的连接、关闭等消耗。使得效率比分开执行的单个insert语句快。
@@ -103,13 +103,13 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
       "@type": "ListItem",
       "position":  1 ,
       "name": "2021s",
-      "item": "http://localhost:1313/2021/"
+      "item": "https://meow527.github.io/2021/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "关于mysql的sql语句的优化",
-      "item": "http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/"
+      "item": "https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/"
     }
   ]
 }
@@ -127,7 +127,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
   "articleBody": "1. 优化insert语句 当进行数据的insert操作的时候，可以考虑采用以下几种优化方案。\n如果需要同时对一张表插入很多行数据时，应该尽量使用多个值表的insert语句，这种方式将大大的缩减客户端与数据库之间的连接、关闭等消耗。使得效率比分开执行的单个insert语句快。\n示例， 原始方式为：\ninsert into tb_test values(1,'Tom'); insert into tb_test values(2,'Cat'); insert into tb_test values(3,'Jerry'); 优化后的方案为 ：\ninsert into tb_test values(1,'Tom'),(2,'Cat')，(3,'Jerry'); 在事务中进行数据插入。\nstart transaction; insert into tb_test values(1,'Tom'); insert into tb_test values(2,'Cat'); insert into tb_test values(3,'Jerry'); commit; 数据有序插入\ninsert into tb_test values(4,'Tim'); insert into tb_test values(1,'Tom'); insert into tb_test values(3,'Jerry'); insert into tb_test values(5,'Rose'); insert into tb_test values(2,'Cat'); 优化后\ninsert into tb_test values(1,'Tom'); insert into tb_test values(2,'Cat'); insert into tb_test values(3,'Jerry'); insert into tb_test values(4,'Tim'); insert into tb_test values(5,'Rose'); 2. 优化order by语句 2.1 环境准备 CREATE TABLE `emp` ( `id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(100) NOT NULL, `age` int(3) NOT NULL, `salary` int(11) DEFAULT NULL, PRIMARY KEY (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; insert into `emp` (`id`, `name`, `age`, `salary`) values('1','Tom','25','2300'); insert into `emp` (`id`, `name`, `age`, `salary`) values('2','Jerry','30','3500'); insert into `emp` (`id`, `name`, `age`, `salary`) values('3','Luci','25','2800'); insert into `emp` (`id`, `name`, `age`, `salary`) values('4','Jay','36','3500'); insert into `emp` (`id`, `name`, `age`, `salary`) values('5','Tom2','21','2200'); insert into `emp` (`id`, `name`, `age`, `salary`) values('6','Jerry2','31','3300'); insert into `emp` (`id`, `name`, `age`, `salary`) values('7','Luci2','26','2700'); insert into `emp` (`id`, `name`, `age`, `salary`) values('8','Jay2','33','3500'); insert into `emp` (`id`, `name`, `age`, `salary`) values('9','Tom3','23','2400'); insert into `emp` (`id`, `name`, `age`, `salary`) values('10','Jerry3','32','3100'); insert into `emp` (`id`, `name`, `age`, `salary`) values('11','Luci3','26','2900'); insert into `emp` (`id`, `name`, `age`, `salary`) values('12','Jay3','37','4500'); create index idx_emp_age_salary on emp(age,salary); 2.2 两种排序方式 1). 第一种是通过对返回数据进行排序，也就是通常说的 filesort 排序，所有不是通过索引直接返回排序结果的排序都叫 FileSort 排序。\n--FileSort效率比较低 explain select * from 表 order by 字段 DESC; 2). 第二种通过有序索引顺序扫描直接返回有序数据，这种情况即为 using index，不需要额外排序，操作效率高。 多字段排序\n--id为主键 解析中的extra都会为Using index explain select id from 表 order by id DESC; --添加了关于age、salary的索引 解析中的extra都会为Using index --相当于使用覆盖索引，其效率会变高 explain select id,age,salary from 表 order by id DESC; 了解了MySQL的排序方式，优化目标就清晰了：尽量减少额外的排序，通过索引直接返回有序数据。where 条件和Order by 使用相同的索引，并且Order By 的顺序和索引顺序相同， 并且Order by 的字段都是升序，或者都是降序。否则肯定需要额外的操作，这样就会出现FileSort。\n2.3 Filesort 的优化 通过创建合适的索引，能够减少 Filesort 的出现，但是在某些情况下，条件限制不能让Filesort消失，那就需要加快 Filesort的排序操作。对于Filesort ， MySQL 有两种排序算法：\n1） 两次扫描算法 ：MySQL4.1 之前，使用该方式排序。首先根据条件取出排序字段和行指针信息，然后在排序区 sort buffer 中排序，如果sort buffer不够，则在临时表 temporary table 中存储排序结果。完成排序之后，再根据行指针回表读取记录，该操作可能会导致大量随机I/O操作。\n2）一次扫描算法：一次性取出满足条件的所有字段，然后在排序区 sort buffer 中排序后直接输出结果集。排序时内存开销较大，但是排序效率比两次扫描算法要高。\nMySQL 通过比较系统变量 max_length_for_sort_data 的大小和Query语句取出的字段总大小， 来判定是否那种排序算法，如果max_length_for_sort_data 更大，那么使用第二种优化之后的算法；否则使用第一种。 可以适当提高 sort_buffer_size 和 max_length_for_sort_data 系统变量，来增大排序区的大小，提高排序的效率。\nshow variables like 'max_length_for_sort_data'; show variables like 'sort_buffer_size'; 3. 优化group by 语句 由于GROUP BY 实际上也同样会进行排序操作，而且与ORDER BY 相比，GROUP BY 主要只是多了排序之后的分组操作。当然，如果在分组的时候还使用了其他的一些聚合函数，那么还需要一些聚合函数的计算。所以，在GROUP BY 的实现过程中，与 ORDER BY 一样也可以利用到索引。\n如果查询包含 group by 但是用户想要避免排序结果的消耗， 则可以执行order by null 禁止排序。如下 ：\nexplain select age,count(*) from emp group by age; 优化后\nexplain select age,count(*) from emp group by age order by null; 从上面的例子可以看出，第一个SQL语句需要进行\"filesort\"，而第二个SQL由于order by null 不需要进行 “filesort”， 而上文提过Filesort往往非常耗费时间。\n创建索引 ：\ncreate index idx_emp_age_salary on emp(age,salary)； --在执行 explain里面的extra 就会变成Using index 查询速度会变得更快 explain select age,count(*) from emp group by age order by null; 4. 优化嵌套查询 Mysql4.1版本之后，开始支持SQL的子查询。这个技术可以使用SELECT语句来创建一个单列的查询结果，然后把这个结果作为过滤条件用在另一个查询中。使用子查询可以一次性的完成很多逻辑上需要多个步骤才能完成的SQL操作，同时也可以避免事务或者表锁死，并且写起来也很容易。但是，有些情况下，子查询是可以被更高效的连接（JOIN）替代。\n示例 ，查找有角色的所有的用户信息 :\nexplain select * from t_user where id in (select user_id from user_role ); 优化后 :\nexplain select * from t_user u , user_role ur where u.id = ur.user_id; 连接(Join)查询之所以更有效率一些 ，是因为MySQL不需要在内存中创建临时表来完成这个逻辑上需要两个步骤的查询工作。\n5. 优化OR条件 对于包含OR的查询子句，如果要利用索引，则OR之间的每个条件列都必须用到索引 ， 而且不能使用到复合索引； 如果没有索引，则应该考虑增加索引。\n建议使用 union 替换 or ：\nexplain select * from emp_test where id = 1 or id = 10; --优化单列 explain select * from emp_test where id = 1 union select * from emp_test where id = 10; explain select * from emp_test where id = 1 or age = 10; --优化 explain select * from emp_test where id = 1 union select * from emp_test where age = 10; 我们来比较下重要指标，发现主要差别是 type 和 ref 这两项\ntype 显示的是访问类型，是较为重要的一个指标，结果值从好到坏依次是：\nsystem \u003e const \u003e eq_ref \u003e ref \u003e fulltext \u003e ref_or_null \u003e index_merge \u003e unique_subquery \u003e index_subquery \u003e range \u003e index \u003e ALL UNION 语句的 type 值为 ref，OR 语句的 type 值为 range，可以看到这是一个很明显的差距\nUNION 语句的 ref 值为 const，OR 语句的 type 值为 null，const 表示是常量值引用，非常快\n这两项的差距就说明了 UNION 要优于 OR 。\n6. 优化分页查询 一般分页查询时，通过创建覆盖索引能够比较好地提高性能。一个常见又非常头疼的问题就是 limit 2000000,10 ，此时需要MySQL排序前2000010 记录，仅仅返回2000000 - 2000010 的记录，其他记录丢弃，查询排序的代价非常大 。\n6.1 优化思路一 在索引上完成排序分页操作，最后根据主键关联回原表查询所需要的其他列内容。\nSELECT * FROM test_user a,(SELECT id from test_user limit 4000000,10) b where a.id = b.id; SELECT * FROM test_user WHERE id \u003e= (SELECT id FROM test_user ORDER BY id ASC LIMIT 6000000, 1) LIMIT 10; SELECT * FROM test_user a,(SELECT id from test_user ORDER BY id ASC limit 6000000,10) b where a.id = b.id; 6.2 优化思路二 该方案适用于主键自增的表，可以把Limit 查询转换成某个位置的查询 。\nSELECT * FROM test_user where id \u003e 2000000 limit 10; SELECT * FROM `test_user` WHERE id between 6000137 AND 6000146 LIMIT 10; SELECT * FROM `test_user` WHERE id \u003e= 6000137 LIMIT 100; 7. 使用SQL提示 SQL提示，是优化数据库的一个重要手段，简单来说，就是在SQL语句中加入一些人为的提示来达到优化操作的目的。\n7.1 USE INDEX 在查询语句中表名的后面，添加 use index 来提供希望MySQL去参考的索引列表，就可以让MySQL不再考虑其他可用的索引。\ncreate index idx_seller_name on 表名(字段); select * from 表名 use index(idx_seller_name) where name = ''; 7.2 IGNORE INDEX 如果用户只是单纯的想让MySQL忽略一个或者多个索引，则可以使用 ignore index 作为 hint 。\nexplain select * from tb_seller ignore index(idx_seller_name) where name = ''; 7.3 FORCE INDEX 为强制MySQL使用一个特定的索引，可在查询中使用 force index 作为hint 。\ncreate index idx_seller_address on tb_seller(address); select * from 表名 FORCE index(idx_seller_name) where name = ''; ",
   "wordCount" : "729",
   "inLanguage": "zh",
-  "image": "http://localhost:1313/images/papermod-cover.png","datePublished": "2021-11-26T14:02:11Z",
+  "image": "https://meow527.github.io/images/papermod-cover.png","datePublished": "2021-11-26T14:02:11Z",
   "dateModified": "2021-11-26T14:02:11Z",
   "author":{
     "@type": "Person",
@@ -135,14 +135,14 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/"
+    "@id": "https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "可以吃饭了吗",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://meow527.github.io/favicon.ico"
     }
   }
 }
@@ -164,7 +164,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="可以吃饭了吗 (Alt + H)">可以吃饭了吗</a>
+            <a href="https://meow527.github.io/" accesskey="h" title="可以吃饭了吗 (Alt + H)">可以吃饭了吗</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -188,7 +188,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
                 </button>
                 <ul class="lang-switch"><li>|</li>
                     <li>
-                        <a href="http://localhost:1313/en/" title="English"
+                        <a href="https://meow527.github.io/en/" title="English"
                             aria-label="English">English</a>
                     </li>
                 </ul>
@@ -196,22 +196,22 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/archives/" title="归档">
+                <a href="https://meow527.github.io/archives/" title="归档">
                     <span>归档</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/friends/" title="友链">
+                <a href="https://meow527.github.io/friends/" title="友链">
                     <span>友链</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="查找">
+                <a href="https://meow527.github.io/search/" title="查找">
                     <span>查找</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="标签">
+                <a href="https://meow527.github.io/tags/" title="标签">
                     <span>标签</span>
                 </a>
             </li>
@@ -222,7 +222,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/2021/">2021s</a></div>
+    <div class="breadcrumbs"><a href="https://meow527.github.io/">主页</a>&nbsp;»&nbsp;<a href="https://meow527.github.io/2021/">2021s</a></div>
     <h1 class="post-title entry-hint-parent">
       关于mysql的sql语句的优化
     </h1>
@@ -433,15 +433,15 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/mysql/">Mysql</a></li>
+      <li><a href="https://meow527.github.io/tags/mysql/">Mysql</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E5%BA%94%E7%94%A8%E5%B1%82%E9%9D%A2%E7%9A%84%E4%BC%98%E5%8C%96/">
+  <a class="prev" href="https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E5%BA%94%E7%94%A8%E5%B1%82%E9%9D%A2%E7%9A%84%E4%BC%98%E5%8C%96/">
     <span class="title">« 上一页</span>
     <br>
     <span>关于mysql应用层面的优化</span>
   </a>
-  <a class="next" href="http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql-innodb-hash%E4%B8%8Eb-tree%E7%9A%84%E5%8C%BA%E5%88%AB/">
+  <a class="next" href="https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql-innodb-hash%E4%B8%8Eb-tree%E7%9A%84%E5%8C%BA%E5%88%AB/">
     <span class="title">下一页 »</span>
     <br>
     <span>关于mysql InnoDB hash与B&#43;tree的区别</span>
@@ -452,7 +452,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share 关于mysql的sql语句的优化 on x"
-            href="https://x.com/intent/tweet/?text=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96&amp;url=http%3a%2f%2flocalhost%3a1313%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f&amp;hashtags=mysql">
+            href="https://x.com/intent/tweet/?text=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96&amp;url=https%3a%2f%2fmeow527.github.io%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f&amp;hashtags=mysql">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -461,7 +461,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share 关于mysql的sql语句的优化 on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f&amp;title=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96&amp;summary=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96&amp;source=http%3a%2f%2flocalhost%3a1313%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f">
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmeow527.github.io%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f&amp;title=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96&amp;summary=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96&amp;source=https%3a%2f%2fmeow527.github.io%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
@@ -470,7 +470,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share 关于mysql的sql语句的优化 on reddit"
-            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f&title=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96">
+            href="https://reddit.com/submit?url=https%3a%2f%2fmeow527.github.io%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f&title=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
@@ -479,7 +479,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share 关于mysql的sql语句的优化 on facebook"
-            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f">
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fmeow527.github.io%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
@@ -488,7 +488,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share 关于mysql的sql语句的优化 on whatsapp"
-            href="https://api.whatsapp.com/send?text=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96%20-%20http%3a%2f%2flocalhost%3a1313%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f">
+            href="https://api.whatsapp.com/send?text=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96%20-%20https%3a%2f%2fmeow527.github.io%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
@@ -497,7 +497,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share 关于mysql的sql语句的优化 on telegram"
-            href="https://telegram.me/share/url?text=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96&amp;url=http%3a%2f%2flocalhost%3a1313%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f">
+            href="https://telegram.me/share/url?text=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96&amp;url=https%3a%2f%2fmeow527.github.io%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f">
             <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
@@ -506,7 +506,7 @@ insert into tb_test values(1,&#39;Tom&#39;); insert into tb_test values(2,&#39;C
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share 关于mysql的sql语句的优化 on ycombinator"
-            href="https://news.ycombinator.com/submitlink?t=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96&u=http%3a%2f%2flocalhost%3a1313%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f">
+            href="https://news.ycombinator.com/submitlink?t=%e5%85%b3%e4%ba%8emysql%e7%9a%84sql%e8%af%ad%e5%8f%a5%e7%9a%84%e4%bc%98%e5%8c%96&u=https%3a%2f%2fmeow527.github.io%2f2021%2f%25E5%2585%25B3%25E4%25BA%258Emysql%25E7%259A%2584sql%25E4%25BC%2598%25E5%258C%2596%2f">
             <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
                 <path

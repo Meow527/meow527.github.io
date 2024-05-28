@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>RabbitMQ on 可以吃饭了吗</title>
-    <link>http://localhost:1313/tags/rabbitmq/</link>
+    <link>https://meow527.github.io/tags/rabbitmq/</link>
     <description>Recent content in RabbitMQ on 可以吃饭了吗</description>
     <image>
       <title>可以吃饭了吗</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
+      <url>https://meow527.github.io/images/papermod-cover.png</url>
+      <link>https://meow527.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.126.1</generator>
     <language>zh</language>
     <copyright>2021-2024 可以吃饭了吗</copyright>
     <lastBuildDate>Mon, 28 Feb 2022 22:10:37 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://meow527.github.io/tags/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rabbitMQ</title>
-      <link>http://localhost:1313/2021/rabbitmq/</link>
+      <link>https://meow527.github.io/2021/rabbitmq/</link>
       <pubDate>Mon, 28 Feb 2022 22:10:37 +0000</pubDate>
-      <guid>http://localhost:1313/2021/rabbitmq/</guid>
+      <guid>https://meow527.github.io/2021/rabbitmq/</guid>
       <description>MQ最终一致性事务 消息百分百投递成功 （结合confirm） 消息百分百消费成功 （结合ack机制 并且要解决降幂等性问题） 关于rabbitMQ的分布式事务的大体流程 MQ分布式事务基础 1 confirm机制 (1)什么是Confirm机制 概念： Pro发送消息到Broker，Broker接受到消息后，产生回送响应Pro中有一个Confirm Listener异步监听响应。 步骤： 消息的确认Pro投递消息后，如果Broker收到消息，则会给Pro一个应答。 Pro接收应答 用来确认这条消息是否正常地发送到Broker，这也是消息可靠性投递的核心保障。 (2)Confirm机制流程图 </description>
     </item>
   </channel>

@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>2021s on 可以吃饭了吗</title>
-    <link>http://localhost:1313/2021/</link>
+    <link>https://meow527.github.io/2021/</link>
     <description>Recent content in 2021s on 可以吃饭了吗</description>
     <image>
       <title>可以吃饭了吗</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
+      <url>https://meow527.github.io/images/papermod-cover.png</url>
+      <link>https://meow527.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.126.1</generator>
     <language>zh</language>
     <copyright>2021-2024 可以吃饭了吗</copyright>
     <lastBuildDate>Fri, 27 May 2022 13:21:32 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/2021/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://meow527.github.io/2021/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>个人整理pdf</title>
-      <link>http://localhost:1313/2021/%E4%B8%AA%E4%BA%BA%E6%95%B4%E7%90%86pdf/</link>
+      <link>https://meow527.github.io/2021/%E4%B8%AA%E4%BA%BA%E6%95%B4%E7%90%86pdf/</link>
       <pubDate>Fri, 27 May 2022 13:21:32 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E4%B8%AA%E4%BA%BA%E6%95%B4%E7%90%86pdf/</guid>
+      <guid>https://meow527.github.io/2021/%E4%B8%AA%E4%BA%BA%E6%95%B4%E7%90%86pdf/</guid>
       <description>1.nacos部署 2.redis面试题 3.RocketMQ 4.如何访问Redis中的海量数据 5.尚硅谷大数据技术之Kafka 6.虚拟机安装lnmp(工业大脑安装向导) 7.面试题MySQL篇 8.面试题高并发与大数据 9.面试题高并发和大流量解决方案篇 10.Rabbitmq </description>
     </item>
     <item>
       <title>搭建单机版redis集群</title>
-      <link>http://localhost:1313/2021/%E6%90%AD%E5%BB%BA%E5%8D%95%E6%9C%BA%E7%89%88redis%E9%9B%86%E7%BE%A4/</link>
+      <link>https://meow527.github.io/2021/%E6%90%AD%E5%BB%BA%E5%8D%95%E6%9C%BA%E7%89%88redis%E9%9B%86%E7%BE%A4/</link>
       <pubDate>Thu, 26 May 2022 11:12:30 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E6%90%AD%E5%BB%BA%E5%8D%95%E6%9C%BA%E7%89%88redis%E9%9B%86%E7%BE%A4/</guid>
+      <guid>https://meow527.github.io/2021/%E6%90%AD%E5%BB%BA%E5%8D%95%E6%9C%BA%E7%89%88redis%E9%9B%86%E7%BE%A4/</guid>
       <description>在虚拟虚拟机中搭建redis单机集群 1.创建搭载redis到文件夹 mkdir /software/server/redis/conf 2.简单记录一下单机版的redis的下载与安装(下载到指定文件夹中) #进入文件夹 cd /software #下载包 wget https://download.redis.io/releases/redis-6.0.8.tar.gz #解压文件 tar -zxvf redis-6.0.8.tar.gz cd redis-6.0.8 #升级gcc yum install centos-release-scl yum install devtoolset-7-gcc* scl enable devtoolset-7 bash #安装 make make PREFIX=/software/server/redis install #安装到指定文件夹 #复制redis配置文件 cp /software/redis-6.0.8/redis.conf /software/server/redis/conf #进入/software/server/redis 修改配置文件 cd /software/server/redis vim conf/redis.conf #将daemonize no 改为 yes就可以了 #启动redis（进入安装redis到bin目录执行 即/software/server/redis/bin下） cd /software/server/redis/bin ./redis-server /software/server/redis/conf/redis.conf #测试连接 ./redis-cli -p 6379 #关闭redis 第一个方法 （在进入./redis-cli -p 6379之后） shutdown #关闭redis 第二个方法 #查看端口pid ps -ef ｜ grep -i redis #杀掉pid kill -9 pid 3.</description>
     </item>
     <item>
       <title>java搭建ELK</title>
-      <link>http://localhost:1313/2021/java%E6%90%AD%E5%BB%BAelk/</link>
+      <link>https://meow527.github.io/2021/java%E6%90%AD%E5%BB%BAelk/</link>
       <pubDate>Mon, 25 Apr 2022 14:48:51 +0000</pubDate>
-      <guid>http://localhost:1313/2021/java%E6%90%AD%E5%BB%BAelk/</guid>
+      <guid>https://meow527.github.io/2021/java%E6%90%AD%E5%BB%BAelk/</guid>
       <description>1.安装java的JDK 查看是否存在java环境 rpm -qa | grep java rpm -qa | grep jdk rpm -qa | grep gcj 如果安装过想要卸载java重新安装 rpm -qa | grep java ｜ xargs rpm -e --nodeps 查看JDK yum list java-1.8* 安装JDK yum install java-1.8.0-openjdk* -y 检查java是否安装成功 java -version 2.安装ElasticSearch 下载包 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.12.0-x86_64.rpm 安装 sudo rpm --install elasticsearch-7.12.0-x86_64.rpm 查看安装位置(通常安装在/usr/share/elasticsearch/) rpm -ql elasticsearch 修改ES数据和日志储存路径 # 创建目录，用于存储elasticsearch数据 mkdir -p /data/elasticsearch/datadir # 修改目录权限 chown -R elasticsearch:elasticsearch /data/elasticsearch/datadir # 创建日志目录 mkdir -p /data/elasticsearch/logdir # 修改目录权限 chown -R elasticsearch:elasticsearch /data/elasticsearch/logdir 修改ES的配置文件 vi /etc/elasticsearch/elasticsearch.</description>
     </item>
     <item>
       <title>rabbitMQ</title>
-      <link>http://localhost:1313/2021/rabbitmq/</link>
+      <link>https://meow527.github.io/2021/rabbitmq/</link>
       <pubDate>Mon, 28 Feb 2022 22:10:37 +0000</pubDate>
-      <guid>http://localhost:1313/2021/rabbitmq/</guid>
+      <guid>https://meow527.github.io/2021/rabbitmq/</guid>
       <description>MQ最终一致性事务 消息百分百投递成功 （结合confirm） 消息百分百消费成功 （结合ack机制 并且要解决降幂等性问题） 关于rabbitMQ的分布式事务的大体流程 MQ分布式事务基础 1 confirm机制 (1)什么是Confirm机制 概念： Pro发送消息到Broker，Broker接受到消息后，产生回送响应Pro中有一个Confirm Listener异步监听响应。 步骤： 消息的确认Pro投递消息后，如果Broker收到消息，则会给Pro一个应答。 Pro接收应答 用来确认这条消息是否正常地发送到Broker，这也是消息可靠性投递的核心保障。 (2)Confirm机制流程图 </description>
     </item>
     <item>
       <title>关于mysql的一些题目</title>
-      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE/</link>
+      <link>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE/</link>
       <pubDate>Wed, 01 Dec 2021 16:08:52 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE/</guid>
+      <guid>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE/</guid>
       <description>1.编写一个SQL查询，获取Employee表中第二高的薪水Salary +----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+ 例如上述Employee表，SQL查询应该返回200作为第二高的薪水。如果不存在第二高的薪水，那么查询应返回null
 答案 --去重 select IFNULL((select Distinct Salary from Employee order by Salary DESC limit 1,1),null) as SecondHighestSalary; --小于最大值 select max(Salary) as SecondHighestSalary from Employee where Salary&amp;lt;(select max(Salary) from Employee); 2.编写一个SQL查询，获取Employee表中第n高的薪水Salary。 答案 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN SET N= N-1; RETURN ( select IFNULL((select Distinct Salary from Employee order by Salary DESC limit N,1),null) as SecondHighestSalary ); END 3.</description>
     </item>
     <item>
       <title>关于mysql应用层面的优化</title>
-      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E5%BA%94%E7%94%A8%E5%B1%82%E9%9D%A2%E7%9A%84%E4%BC%98%E5%8C%96/</link>
+      <link>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E5%BA%94%E7%94%A8%E5%B1%82%E9%9D%A2%E7%9A%84%E4%BC%98%E5%8C%96/</link>
       <pubDate>Mon, 29 Nov 2021 10:14:55 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E5%BA%94%E7%94%A8%E5%B1%82%E9%9D%A2%E7%9A%84%E4%BC%98%E5%8C%96/</guid>
+      <guid>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E5%BA%94%E7%94%A8%E5%B1%82%E9%9D%A2%E7%9A%84%E4%BC%98%E5%8C%96/</guid>
       <description>Mysql应用层面的优化 1. 应用优化 在实际生产环境中，由于数据库本身的性能局限，就必须要对前台的应用进行一些优化，来降低数据库的访问压力。
 1.1 使用连接池 对于访问数据库来说，建立连接的代价是比较昂贵的，因为我们频繁的创建关闭连接，是比较耗费资源的，我们有必要建立 数据库连接池，以提高访问的性能。
 1.2 减少对MySQL的访问 1.2.1 避免对数据进行重复检索 在编写应用代码时，需要能够理清对数据库的访问逻辑。能够一次连接就获取到结果的，就不用两次连接，这样可以大大减少对数据库无用的重复请求。
@@ -71,9 +71,9 @@ select id, name , status from tb_book; 1.2.2 增加cache层 在应用中，我�
     </item>
     <item>
       <title>关于mysql的sql语句的优化</title>
-      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/</link>
+      <link>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/</link>
       <pubDate>Fri, 26 Nov 2021 14:02:11 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/</guid>
+      <guid>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/</guid>
       <description>1. 优化insert语句 当进行数据的insert操作的时候，可以考虑采用以下几种优化方案。
 如果需要同时对一张表插入很多行数据时，应该尽量使用多个值表的insert语句，这种方式将大大的缩减客户端与数据库之间的连接、关闭等消耗。使得效率比分开执行的单个insert语句快。
 示例， 原始方式为：
@@ -85,9 +85,9 @@ insert into tb_test values(1,&amp;#39;Tom&amp;#39;); insert into tb_test values(
     </item>
     <item>
       <title>关于mysql InnoDB hash与B&#43;tree的区别</title>
-      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql-innodb-hash%E4%B8%8Eb-tree%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <link>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql-innodb-hash%E4%B8%8Eb-tree%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Fri, 26 Nov 2021 13:56:39 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql-innodb-hash%E4%B8%8Eb-tree%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <guid>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql-innodb-hash%E4%B8%8Eb-tree%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
       <description>区别： 1.hash不支持最左原则，b+tree支持。因为hash的联合查询是这样，比如where a=1 and b=2，是把 a=1 and b=2转成一个hash码来进行查询，如果换成 b=2 and a=1，那么hash码将完全不同，索引失效。
 2.hash不支持范围查询，因为hash是无序的，和b+tree不一样，b树是有序的
 3.hash不支持order by，因为是无序的
@@ -96,93 +96,93 @@ insert into tb_test values(1,&amp;#39;Tom&amp;#39;); insert into tb_test values(
     </item>
     <item>
       <title>关于mysql事务的概念</title>
-      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
+      <link>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
       <pubDate>Wed, 24 Nov 2021 10:23:01 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
+      <guid>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
       <description>在MySQL中只有使用了 Innodb 数据库引擎的数据库或表才支持事务。 mysql的事务可以理解成用来维护数据库表的完整性。 mysql事务的四个特点 原子性 : 一个事务（transaction）中的所有操作，要么全部完成，要么全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样 一致性 : 在事务开始之前和事务结束以后，数据库的完整性没有被破坏。 隔离性 : 数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括读未提交（Read uncommitted）、读提交（read committed）、可重复读（repeatable read）和串行化（Serializable）。 持久性 : 事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。 参考链接 https://www.runoob.com/mysql/mysql-transaction.html </description>
     </item>
     <item>
       <title>关于mysql的部分概念</title>
-      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
+      <link>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
       <pubDate>Thu, 18 Nov 2021 16:48:28 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
+      <guid>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
       <description>索引 可以理解成:索引就是mysql高速获取数据的一种数据结构。 聚集索引、复合索引、前缀索引、唯一索引默认都是使用 B+tree 索引，统称为 索引。 MySql索引数据结构对经典的B+Tree进行了优化。在原B+Tree的基础上，增加一个指向相邻叶子节点的链表指针，就形成了带有顺序指针的B+Tree，提高区间访问的性能。 B+树数据存叶子节点。索引存根节点。 优势 1） 类似于书籍的目录索引，提高数据检索的效率，降低数据库的IO成本。 2） 通过索引列对数据进行排序，降低数据排序的成本，降低CPU的消耗。 劣势 1） 实际上索引也是一张表，该表中保存了主键与索引字段，并指向实体类的记录，所以索引列也是要占用空间的。 2） 虽然索引大大提高了查询效率，同时却也降低更新表的速度，如对表进行INSERT、UPDATE、DELETE。因为更新表时，MySQL 不仅要保存数据，还要保存一下索引文件每次更新添加了索引列的字段，都会调整因为更新所带来的键值变化后的索引信息。 索引设计原则 索引的设计可以遵循一些已有的原则，创建索引的时候请尽量考虑符合这些原则，便于提升索引的使用效率，更高效的使用索引。 对查询频次较高，且数据量比较大的表建立索引。 索引字段的选择，最佳候选列应当从where子句的条件中提取，如果where子句中的组合比较多，那么应当挑选最常用、过滤效果最好的列的组合。 使用唯一索引，区分度越高，使用索引的效率越高。 索引可以有效的提升查询数据的效率，但索引数量不是多多益善，索引越多，维护索引的代价自然也就水涨船高。对于插入、更新、删除等DML操作比较频繁的表来说，索引过多，会引入相当高的维护代价，降低DML操作的效率，增加相应操作的时间消耗。另外索引过多的话，MySQL也会犯选择困难病，虽然最终仍然会找到一个可用的索引，但无疑提高了选择的代价。 使用短索引，索引创建之后也是使用硬盘来存储的，因此提升索引访问的I/O效率，也可以提升总体的访问效率。假如构成索引的字段总长度比较短，那么在给定大小的存储块内可以存储更多的索引值，相应的可以有效的提升MySQL访问索引的I/O效率。 利用最左前缀，N个列组合而成的组合索引，那么相当于是创建了N个索引，如果查询时where子句中使用了组成该索引的前几个字段，那么这条查询SQL可以利用组合索引来提升查询效率。 避免索引失效 全匹配原则。 最左前缀法则。 在最左前缀法则的基础上，范围查询右边的列，不会使用索引。 不要在索引列上进行运算操作， 索引将失效。 字符串类型不加单引号查询， 索引将失效。 尽量使用覆盖索引，避免使用select *（避免回表查询 什么是回表查询:mysql的索引是一个链子 在查找数据的时候找的是链子上面的索引，在找到链子的东西，select * 通过链子的索引的东西再去数据库表把整条找出来，这就叫索引回表。 避免回表查询：在建立复合索引时尽量把）； 避免or跟索引条件连用 如果仅仅是尾部模糊匹配（like &amp;lsquo;str%&amp;rsquo;），索引不会失效。如果是头部模糊匹配，索引失效。（用覆盖索引能避免模糊查询失效） 如果MySQL评估使用索引比全表更慢，则不使用索引。 单列索引和复合索引。尽量使用复合索引，而少使用单列索引 。 存储过程和函数 存储过程和函数概述 存储过程和函数是 事先经过编译并存储在数据库中的一段 SQL 语句的集合，调用存储过程和函数可以简化应用开发人员的很多工作，减少数据在数据库和应用服务器之间的传输，对于提高数据处理的效率是有好处的。 存储过程和函数的区别在于函数必须有返回值，而存储过程没有。 函数 ： 是一个有返回值的过程 ； 过程 ： 是一个没有返回值的函数 ； 各种存储引擎特性 下面重点介绍几种常用的存储引擎， 并对比各个存储引擎之间的区别， 如下表所示 ： 特点 InnoDB MyISAM MEMORY MERGE NDB 存储限制 64TB 有 有 没有 有 事务安全 ==支持== 锁机制 ==行锁(适合高并发)== ==表锁== 表锁 表锁 行锁 B树索引 支持 支持 支持 支持 支持 哈希索引 支持 全文索引 支持(5.</description>
     </item>
     <item>
       <title>关于mongoDB权限问题</title>
-      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emongodb/</link>
+      <link>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emongodb/</link>
       <pubDate>Wed, 17 Nov 2021 22:22:22 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emongodb/</guid>
+      <guid>https://meow527.github.io/2021/%E5%85%B3%E4%BA%8Emongodb/</guid>
       <description>关于mongodb的权限问题 1. mongodb是没有默认管理员账号，所以要先添加管理员账号，在开启权限认证。 2. 切换到admin数据库，添加的账号才是管理员账号。 3. 用户只能在用户所在数据库登录，包括管理员账号。 4. 管理员可以管理所有数据库，但是不能直接管理其他数据库，要先在admin数据库认证后才可以 createUser的字段介绍 1. user字段，为新用户的名字； 2. pwd字段，用户的密码； 3. cusomData字段，为任意内容，例如可以为用户全名介绍，可不填； 4. roles字段，指定用户的角色，可以用一个空数组给新用户设定空角色； 5. 在roles字段,可以指定内置角色和用户定义的角色。 权限介绍 1. 数据库用户角色：read、readWrite; 2. 数据库管理角色：dbAdmin、dbOwner、userAdmin； 3. 集群管理角色：clusterAdmin、clusterManager、clusterMonitor、hostManager； 4. 备份恢复角色：backup、restore； 5. 所有数据库角色：readAnyDatabase、readWriteAnyDatabase、userAdminAnyDatabase、dbAdminAnyDatabase 6. 超级用户角色：root // 这里还有几个角色间接或直接提供了系统超级用户的访问（dbOwner 、userAdmin、userAdminAnyDatabase） 7. 内部角色：__system 对应的权限 1. Read：允许用户读取指定数据库 2. readWrite：允许用户读写指定数据库 3. dbAdmin：允许用户在指定数据库中执行管理函数，如索引创建、删除，查看统计或访问system.profile 4. userAdmin：允许用户向system.users集合写入，可以找指定数据库里创建、删除和管理用户 5. clusterAdmin：只在admin数据库中可用，赋予用户所有分片和复制集相关函数的管理权限。 6. readAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的读权限 7. readWriteAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的读写权限 8. userAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的userAdmin权限 9. dbAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的dbAdmin权限。 10. root：只在admin数据库中可用。超级账号，超级权限 创建用户的事例1 #进入表admin use admin #创建一个名为 admin，密码为 123456 的用户。 db.createUser({ user:&amp;#39;admin&amp;#39;,pwd:&amp;#39;123456&amp;#39;,roles:[ { role:&amp;#39;userAdminAnyDatabase&amp;#39;, db: &amp;#39;admin&amp;#39;},&amp;#34;readWriteAnyDatabase&amp;#34;]}); 创建用户的事咧2 #进入表test use test #在test数据库创建用户test，并给该用户admin数据库上clusterAdmin和readAnyDatabase的角色，test数据库上readWrite角色。 db.</description>
     </item>
     <item>
       <title>linux上使用mysql</title>
-      <link>http://localhost:1313/2021/linux%E4%B8%8A%E4%BD%BF%E7%94%A8mysql/</link>
+      <link>https://meow527.github.io/2021/linux%E4%B8%8A%E4%BD%BF%E7%94%A8mysql/</link>
       <pubDate>Wed, 17 Nov 2021 18:35:27 +0000</pubDate>
-      <guid>http://localhost:1313/2021/linux%E4%B8%8A%E4%BD%BF%E7%94%A8mysql/</guid>
+      <guid>https://meow527.github.io/2021/linux%E4%B8%8A%E4%BD%BF%E7%94%A8mysql/</guid>
       <description>查看Centos系统是否自带mysql安装包 rpm -qa ｜ grep -i mysql 卸载Centos系统是否自带mysql安装包 rpm -e 安装包名称 --nodeps </description>
     </item>
     <item>
       <title>mysql count(1)与select TABLE_ROWS from information_schema的区别</title>
-      <link>http://localhost:1313/2021/mysql-count-1-%E4%B8%8Eselect-table-rows-from-information-schema%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <link>https://meow527.github.io/2021/mysql-count-1-%E4%B8%8Eselect-table-rows-from-information-schema%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Tue, 16 Nov 2021 15:14:41 +0000</pubDate>
-      <guid>http://localhost:1313/2021/mysql-count-1-%E4%B8%8Eselect-table-rows-from-information-schema%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <guid>https://meow527.github.io/2021/mysql-count-1-%E4%B8%8Eselect-table-rows-from-information-schema%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
       <description>数据库表的准确值（缺点在数据量很大的时候即使加了索引 查询所需时间依旧比较长） SELECT count(1) as total FROM test_user; table_rows只是估算值，比起count，该查询所需时间极少，对于千万级别数据量的表（大约1s左右），很有用的 #TABLE_NAME为表名 TABLE_SCHEMA为数据库名 select TABLE_ROWS from information_schema.TABLES where TABLE_NAME=&amp;#39;test_user&amp;#39; AND TABLE_SCHEMA = &amp;#39;TestMysql&amp;#39;; </description>
     </item>
     <item>
       <title>mysql 脚本生成百万条数据</title>
-      <link>http://localhost:1313/2021/mysql-%E8%84%9A%E6%9C%AC%E7%94%9F%E5%AD%98%E7%99%BE%E4%B8%87%E8%B7%B3%E6%95%B0%E6%8D%AE/</link>
+      <link>https://meow527.github.io/2021/mysql-%E8%84%9A%E6%9C%AC%E7%94%9F%E5%AD%98%E7%99%BE%E4%B8%87%E8%B7%B3%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Tue, 16 Nov 2021 14:37:00 +0000</pubDate>
-      <guid>http://localhost:1313/2021/mysql-%E8%84%9A%E6%9C%AC%E7%94%9F%E5%AD%98%E7%99%BE%E4%B8%87%E8%B7%B3%E6%95%B0%E6%8D%AE/</guid>
+      <guid>https://meow527.github.io/2021/mysql-%E8%84%9A%E6%9C%AC%E7%94%9F%E5%AD%98%E7%99%BE%E4%B8%87%E8%B7%B3%E6%95%B0%E6%8D%AE/</guid>
       <description>创建内存表 CREATE TABLE `test_user_memory` ( `id` int(11) NOT NULL AUTO_INCREMENT comment &amp;#39;主键id&amp;#39;, `user_id` varchar(36) NOT NULL comment &amp;#39;用户id&amp;#39;, `user_name` varchar(30) NOT NULL comment &amp;#39;用户名称&amp;#39;, `phone` varchar(20) NOT NULL comment &amp;#39;手机号码&amp;#39;, `lan_id` int(9) NOT NULL comment &amp;#39;本地网&amp;#39;, `region_id` int(9) NOT NULL comment &amp;#39;区域&amp;#39;, `create_time` datetime NOT NULL comment &amp;#39;创建时间&amp;#39;, PRIMARY KEY (`id`), KEY `idx_user_id` (`user_id`) ) ENGINE=MEMORY DEFAULT CHARSET=utf8mb4; 创建普通表 CREATE TABLE `test_user` ( `id` int(11) NOT NULL AUTO_INCREMENT comment &amp;#39;主键id&amp;#39;, `user_id` varchar(36) NOT NULL comment &amp;#39;用户id&amp;#39;, `user_name` varchar(30) NOT NULL comment &amp;#39;用户名称&amp;#39;, `phone` varchar(20) NOT NULL comment &amp;#39;手机号码&amp;#39;, `lan_id` int(9) NOT NULL comment &amp;#39;本地网&amp;#39;, `region_id` int(9) NOT NULL comment &amp;#39;区域&amp;#39;, `create_time` datetime NOT NULL comment &amp;#39;创建时间&amp;#39;, PRIMARY KEY (`id`), KEY `idx_user_id` (`user_id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 生成手机号码的时候要用到 生成n个随机数字 DELIMITER $$ CREATE FUNCTION randNum(n int) RETURNS VARCHAR(255) BEGIN DECLARE chars_str varchar(20) DEFAULT &amp;#39;0123456789&amp;#39;; DECLARE return_str varchar(255) DEFAULT &amp;#39;&amp;#39;; DECLARE i INT DEFAULT 0; WHILE i &amp;lt; n DO SET return_str = concat(return_str,substring(chars_str , FLOOR(1 + RAND()*10 ),1)); SET i = i +1; END WHILE; RETURN return_str; END $$ 创建生成号码函数 #生成随机手机号码 #定义常用的手机头 130 131 132 133 134 135 136 137 138 139 186 187 189 151 157 #SET starts = 1+floor(rand()*15)*4; 截取字符串的开始是从 1、5、9、13 .</description>
     </item>
     <item>
       <title>centos定时任务</title>
-      <link>http://localhost:1313/2021/centos%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
+      <link>https://meow527.github.io/2021/centos%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Tue, 16 Nov 2021 14:23:14 +0000</pubDate>
-      <guid>http://localhost:1313/2021/centos%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
+      <guid>https://meow527.github.io/2021/centos%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
       <description>crontab -l 查看定时任务 crontab -e 编辑定时任务 写法 (定时任务只会执行一次) #每年4月 7月 10月 1月一日凌晨00:10执行 #/usr/bin/php 表示用/usr/bin/php这个位置的php去解析后面的/data/mxjk/cli/quarter_report.php 的php文件 10 00 1 1,4,7,10 * /usr/bin/php /data/mxjk/cli/quarter_report.php #每年4月 7月 10月 1月一日晚上8:00向用户推送报告 00 20 1 1,4,7,10 * /usr/bin/php /data/mxjk/cli/push_report.php #每日00:10统计设备检测数 10 00 * * * curl https://www.maixiangjk.com/api/test_blue/upToday 参考链接 https://www.cnblogs.com/dabai-wang09/p/11260766.html </description>
     </item>
     <item>
       <title>docker入门</title>
-      <link>http://localhost:1313/2021/docker%E5%85%A5%E9%97%A8/</link>
+      <link>https://meow527.github.io/2021/docker%E5%85%A5%E9%97%A8/</link>
       <pubDate>Thu, 11 Nov 2021 11:26:50 +0000</pubDate>
-      <guid>http://localhost:1313/2021/docker%E5%85%A5%E9%97%A8/</guid>
+      <guid>https://meow527.github.io/2021/docker%E5%85%A5%E9%97%A8/</guid>
       <description>Docker常用命令 拉取镜像： docker pull [镜像名/版本号] 搜索镜像： docker search [镜像名] 查看镜像： docker images [-a 所有images /f 过滤（使用较少）/q 只显示images ID] 删除镜像： docker rmi [镜像ID/镜像名] 删除所有镜像： docker rmi $(docker images -q) 启动容器： docker run -d -i -t [容器ID] /bin/bash 进入当前运行的容器： docker exec -it [容器ID] /bin/bash 查看容器详细信息： docker inspect [容器ID] 查看容器： docker ps [-a/f/n/l/q/s] 从容器内拷贝文件到主机上： docker cp [容器ID] 退出不停止容器： control + p + q 关闭容器： docker stop 容器ID 启动容器： docker start 容器ID 重启容器： docker restart 容器ID 删删除所有容器： docker rm $(docker ps -aq) 拉取php镜像 #拉取php镜像 docker pull php:7.</description>
     </item>
     <item>
       <title>h5跳转小程序</title>
-      <link>http://localhost:1313/2021/h5%E8%B7%B3%E8%BD%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+      <link>https://meow527.github.io/2021/h5%E8%B7%B3%E8%BD%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
       <pubDate>Fri, 05 Nov 2021 14:34:56 +0000</pubDate>
-      <guid>http://localhost:1313/2021/h5%E8%B7%B3%E8%BD%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
+      <guid>https://meow527.github.io/2021/h5%E8%B7%B3%E8%BD%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
       <description>PHP 后段代码 1.校验微信JSSDK 具体代码 微信公众号h5跳转小程序的ticket是用微信公众号的access_token生成的（小程序这边的ticket都是用微信公众号的appid跟密钥） &amp;lt;?php namespace app\wechat\controller; use think\Controller; use think\Db; use app\wechat\controller\Token; define(&amp;#39;APPID&amp;#39;, &amp;#39;微信公众号appid&amp;#39;); define(&amp;#39;APPSERCET&amp;#39;, &amp;#39;微信公众号密钥&amp;#39;); Class WxMini extends Controller{ public static function http_request($url,$data = null){ $curl = curl_init(); curl_setopt($curl, CURLOPT_URL, $url); curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, FALSE); curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, FALSE); if (!empty($data)){ curl_setopt($curl, CURLOPT_POST, 1); curl_setopt($curl, CURLOPT_POSTFIELDS, $data); } curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); $output = curl_exec($curl); curl_close($curl); return $output; } public function getTicket(){ //获取ticket $Ticket = Db::table(&amp;#34;mxjk_access_token&amp;#34;)-&amp;gt;where([&amp;#39;name&amp;#39;=&amp;gt;&amp;#34;ticket&amp;#34;,&amp;#39;id&amp;#39;=&amp;gt;2])-&amp;gt;find(); $now = time(); if($now &amp;gt; $Ticket[&amp;#39;expires_in&amp;#39;]){ //重新申请token $token = new Token(); $access_token = $token-&amp;gt;getAccessToken(); $url = &amp;#34;https://api.</description>
     </item>
     <item>
       <title>hexo部署在自己的服务器</title>
-      <link>http://localhost:1313/2021/hexo%E9%83%A8%E7%BD%B2%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://meow527.github.io/2021/hexo%E9%83%A8%E7%BD%B2%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Wed, 03 Nov 2021 16:34:29 +0000</pubDate>
-      <guid>http://localhost:1313/2021/hexo%E9%83%A8%E7%BD%B2%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://meow527.github.io/2021/hexo%E9%83%A8%E7%BD%B2%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>hexo的简单使用与部署</description>
     </item>
     <item>
       <title>yum安装lnmp</title>
-      <link>http://localhost:1313/2021/yum%E5%AE%89%E8%A3%85lnmp/</link>
+      <link>https://meow527.github.io/2021/yum%E5%AE%89%E8%A3%85lnmp/</link>
       <pubDate>Tue, 02 Nov 2021 13:14:47 +0000</pubDate>
-      <guid>http://localhost:1313/2021/yum%E5%AE%89%E8%A3%85lnmp/</guid>
+      <guid>https://meow527.github.io/2021/yum%E5%AE%89%E8%A3%85lnmp/</guid>
       <description>nginx 第一步 直接yum yum install nginx 如果是虚拟机则可能会说找不到nginx的包运行如下命令 #rpm -ivh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm cd /etc/yum.repos.d/rpm -ivh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm yum update #更新yum yum install nginx 第二步 关于nginx的启动 systemctl start nginx #启动 systemctl restart nginx #重启 systemctl stop nginx #关闭 systemctl reload nginx #重载nginx配置 安装差异 nginx -s reload(配置了全局变量) systemctl status nginx #查看运行状况 PHP 第一步 装epel源 sudo dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.3.noarch.rpm 第二步 安装yum源管理工具 yum install yum-utils #sudo dnf -y install yum-utils 如果是虚拟机在此之前可能需要如下命令 yum install epel- release -y yum install dnf 第三步 sudo dnf -y install https://dl.</description>
     </item>
     <item>
       <title>源码安装lnmp</title>
-      <link>http://localhost:1313/2021/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85lnmp/</link>
+      <link>https://meow527.github.io/2021/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85lnmp/</link>
       <pubDate>Tue, 02 Nov 2021 10:20:19 +0000</pubDate>
-      <guid>http://localhost:1313/2021/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85lnmp/</guid>
+      <guid>https://meow527.github.io/2021/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85lnmp/</guid>
       <description>lnmp 第一步创建一个总文件夹 mkdir /data/{soft,server} -p nginx 第一步 useradd www -s /sbin/nologin -M 第二步 从nginx官网下载它的包 wget http://nginx.org/download/nginx-1.6.3.tar.gz 第三步 解压nginx tar xzf nginx (tar xzf nginx-1.6.3.tar.gz) 第四步 将解压出来的nginx 放到指定目录 ./configure --prefix=/data/server/nginx] (cd nginx-1.6.3再执行该命令 linux环境下安装软件是./configure编译文件 --prefix 到指定目录) 在此期间如有报错 需要用yum安装的命令 [./configure: error: C compiler cc is not found] yum -y install gcc [he HTTP rewrite module requires the PCRE library.] yum -y install pcre-devel [./configure: error: the HTTP gzip module requires the zlib library.] yum install -y zlib-devel 第五步 编译安装 make &amp;amp;&amp;amp; make install 第六步 修改nginx的配置文件 vim /data/server/nginx/conf/nginx.</description>
     </item>
     <item>
       <title>linux安装zookeeper与kafka</title>
-      <link>http://localhost:1313/2021/linux%E5%AE%89%E8%A3%85zookeeper%E4%B8%8Ekafka/</link>
+      <link>https://meow527.github.io/2021/linux%E5%AE%89%E8%A3%85zookeeper%E4%B8%8Ekafka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/2021/linux%E5%AE%89%E8%A3%85zookeeper%E4%B8%8Ekafka/</guid>
+      <guid>https://meow527.github.io/2021/linux%E5%AE%89%E8%A3%85zookeeper%E4%B8%8Ekafka/</guid>
       <description>1.下载zookeeper 下载 # 进入下载目录并下载 cd /data wget https://mirrors.bfsu.edu.cn/apache/zookeeper/zookeeper-3.7.0/apache-zookeeper-3.7.0-bin.tar.gz 解压 #解压 tar -zxvf apache-zookeeper-3.7.0-bin.tar.gz #重命名 mv apache-zookeeper-3.7.0-bin zookeeper 修改配置文件 # 1.进入配置文件目录 cd zookeeper/conf #2.将zoo_sample.cfg这个文件复制为zoo.cfg (注意：文件名一定要是zoo.cfg) cp zoo_sample.cfg zoo.cfg #3.修改配置文件vi zoo.cfg 数据存放的文件 文件夹一定要存在 要不然会启动失败 mkdir /data/zookeeper/data vi zoo.cfg #修改文件里面的内容 dataDir = /data/zookeeper/data 启动 #进入文件夹 cd /data/zookeeper/bin #启动 ./zkServer.sh start # 停止 ./zkServer.sh stop # 重启 ./zkServer.sh restart # 查看状态 ./zkServer.sh status 设置zookeeper开机自动启动 cd /lib/systemd/system/ vi zookeeper.service #写入文件的内容 [Unit] Description=zookeeperservice After=network.target [Service] WorkingDirectory=/data/zookeeper #zookeeper路径 ExecStart=/data/zookeeper/bin/zkServer.</description>
     </item>
   </channel>

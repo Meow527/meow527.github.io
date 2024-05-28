@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Centos on 可以吃饭了吗</title>
-    <link>http://localhost:1313/tags/centos/</link>
+    <link>https://meow527.github.io/tags/centos/</link>
     <description>Recent content in Centos on 可以吃饭了吗</description>
     <image>
       <title>可以吃饭了吗</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
+      <url>https://meow527.github.io/images/papermod-cover.png</url>
+      <link>https://meow527.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.126.1</generator>
     <language>zh</language>
     <copyright>2021-2024 可以吃饭了吗</copyright>
     <lastBuildDate>Tue, 16 Nov 2021 14:23:14 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://meow527.github.io/tags/centos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>centos定时任务</title>
-      <link>http://localhost:1313/2021/centos%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
+      <link>https://meow527.github.io/2021/centos%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Tue, 16 Nov 2021 14:23:14 +0000</pubDate>
-      <guid>http://localhost:1313/2021/centos%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
+      <guid>https://meow527.github.io/2021/centos%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
       <description>crontab -l 查看定时任务 crontab -e 编辑定时任务 写法 (定时任务只会执行一次) #每年4月 7月 10月 1月一日凌晨00:10执行 #/usr/bin/php 表示用/usr/bin/php这个位置的php去解析后面的/data/mxjk/cli/quarter_report.php 的php文件 10 00 1 1,4,7,10 * /usr/bin/php /data/mxjk/cli/quarter_report.php #每年4月 7月 10月 1月一日晚上8:00向用户推送报告 00 20 1 1,4,7,10 * /usr/bin/php /data/mxjk/cli/push_report.php #每日00:10统计设备检测数 10 00 * * * curl https://www.maixiangjk.com/api/test_blue/upToday 参考链接 https://www.cnblogs.com/dabai-wang09/p/11260766.html </description>
     </item>
   </channel>
