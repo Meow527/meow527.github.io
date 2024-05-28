@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Zookeeper on 可以吃饭了吗</title>
+    <link>http://localhost:1313/tags/zookeeper/</link>
+    <description>Recent content in Zookeeper on 可以吃饭了吗</description>
+    <image>
+      <title>可以吃饭了吗</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
+    <language>zh</language>
+    <copyright>2021-2024 可以吃饭了吗</copyright>
+    <atom:link href="http://localhost:1313/tags/zookeeper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux安装zookeeper与kafka</title>
+      <link>http://localhost:1313/2021/linux%E5%AE%89%E8%A3%85zookeeper%E4%B8%8Ekafka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2021/linux%E5%AE%89%E8%A3%85zookeeper%E4%B8%8Ekafka/</guid>
+      <description>1.下载zookeeper 下载 # 进入下载目录并下载 cd /data wget https://mirrors.bfsu.edu.cn/apache/zookeeper/zookeeper-3.7.0/apache-zookeeper-3.7.0-bin.tar.gz 解压 #解压 tar -zxvf apache-zookeeper-3.7.0-bin.tar.gz #重命名 mv apache-zookeeper-3.7.0-bin zookeeper 修改配置文件 # 1.进入配置文件目录 cd zookeeper/conf #2.将zoo_sample.cfg这个文件复制为zoo.cfg (注意：文件名一定要是zoo.cfg) cp zoo_sample.cfg zoo.cfg #3.修改配置文件vi zoo.cfg 数据存放的文件 文件夹一定要存在 要不然会启动失败 mkdir /data/zookeeper/data vi zoo.cfg #修改文件里面的内容 dataDir = /data/zookeeper/data 启动 #进入文件夹 cd /data/zookeeper/bin #启动 ./zkServer.sh start # 停止 ./zkServer.sh stop # 重启 ./zkServer.sh restart # 查看状态 ./zkServer.sh status 设置zookeeper开机自动启动 cd /lib/systemd/system/ vi zookeeper.service #写入文件的内容 [Unit] Description=zookeeperservice After=network.target [Service] WorkingDirectory=/data/zookeeper #zookeeper路径 ExecStart=/data/zookeeper/bin/zkServer.</description>
+    </item>
+  </channel>
+</rss>

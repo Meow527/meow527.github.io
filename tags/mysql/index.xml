@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mysql on 可以吃饭了吗</title>
+    <link>http://localhost:1313/tags/mysql/</link>
+    <description>Recent content in Mysql on 可以吃饭了吗</description>
+    <image>
+      <title>可以吃饭了吗</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
+    <language>zh</language>
+    <copyright>2021-2024 可以吃饭了吗</copyright>
+    <lastBuildDate>Wed, 01 Dec 2021 16:08:52 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于mysql的一些题目</title>
+      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE/</link>
+      <pubDate>Wed, 01 Dec 2021 16:08:52 +0000</pubDate>
+      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE/</guid>
+      <description>1.编写一个SQL查询，获取Employee表中第二高的薪水Salary +----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+ 例如上述Employee表，SQL查询应该返回200作为第二高的薪水。如果不存在第二高的薪水，那么查询应返回null
+答案 --去重 select IFNULL((select Distinct Salary from Employee order by Salary DESC limit 1,1),null) as SecondHighestSalary; --小于最大值 select max(Salary) as SecondHighestSalary from Employee where Salary&amp;lt;(select max(Salary) from Employee); 2.编写一个SQL查询，获取Employee表中第n高的薪水Salary。 答案 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN SET N= N-1; RETURN ( select IFNULL((select Distinct Salary from Employee order by Salary DESC limit N,1),null) as SecondHighestSalary ); END 3.</description>
+    </item>
+    <item>
+      <title>关于mysql应用层面的优化</title>
+      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E5%BA%94%E7%94%A8%E5%B1%82%E9%9D%A2%E7%9A%84%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Mon, 29 Nov 2021 10:14:55 +0000</pubDate>
+      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E5%BA%94%E7%94%A8%E5%B1%82%E9%9D%A2%E7%9A%84%E4%BC%98%E5%8C%96/</guid>
+      <description>Mysql应用层面的优化 1. 应用优化 在实际生产环境中，由于数据库本身的性能局限，就必须要对前台的应用进行一些优化，来降低数据库的访问压力。
+1.1 使用连接池 对于访问数据库来说，建立连接的代价是比较昂贵的，因为我们频繁的创建关闭连接，是比较耗费资源的，我们有必要建立 数据库连接池，以提高访问的性能。
+1.2 减少对MySQL的访问 1.2.1 避免对数据进行重复检索 在编写应用代码时，需要能够理清对数据库的访问逻辑。能够一次连接就获取到结果的，就不用两次连接，这样可以大大减少对数据库无用的重复请求。
+比如 ，需要获取书籍的id 和name字段 ， 则查询如下：
+select id , name from tb_book; 之后，在业务逻辑中有需要获取到书籍状态信息， 则查询如下：
+select id , status from tb_book; 这样，就需要向数据库提交两次请求，数据库就要做两次查询操作。其实完全可以用一条SQL语句得到想要的结果。
+select id, name , status from tb_book; 1.2.2 增加cache层 在应用中，我们可以在应用中增加 缓存 层来达到减轻数据库负担的目的。缓存层有很多种，也有很多实现方式，只要能达到降低数据库的负担又能满足应用需求就可以。
+因此可以部分数据从数据库中抽取出来放到应用端以文本方式存储， 或者使用框架(Mybatis, Hibernate)提供的一级缓存/二级缓存，或者使用redis数据库来缓存数据 。
+1.3 负载均衡 负载均衡是应用中使用非常普遍的一种优化方法，它的机制就是利用某种均衡算法，将固定的负载量分布到不同的服务器上， 以此来降低单台服务器的负载，达到优化的效果。
+1.3.1 利用MySQL复制分流查询 通过MySQL的主从复制，实现读写分离，使增删改操作走主节点，查询操作走从节点，从而可以降低单台服务器的读写压力。
+1.3.2 采用分布式数据库架构 分布式数据库架构适合大数据量、负载高的情况，它有良好的拓展性和高可用性。通过在多台服务器之间分布数据，可以实现在多台服务器之间的负载均衡，提高访问效率。
+2. Mysql中查询缓存优化 2.1 概述 开启Mysql的查询缓存，当执行完全相同的SQL语句的时候，服务器就会直接从缓存中读取结果，当数据被修改，之前的缓存会失效，修改比较频繁的表不适合做查询缓存。
+2.2 操作流程 客户端发送一条查询给服务器； 服务器先会检查查询缓存，如果命中了缓存，则立即返回存储在缓存中的结果。否则进入下一阶段； 服务器端进行SQL解析、预处理，再由优化器生成对应的执行计划； MySQL根据优化器生成的执行计划，调用存储引擎的API来执行查询； 将结果返回给客户端。 2.</description>
+    </item>
+    <item>
+      <title>关于mysql的sql语句的优化</title>
+      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Fri, 26 Nov 2021 14:02:11 +0000</pubDate>
+      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84sql%E4%BC%98%E5%8C%96/</guid>
+      <description>1. 优化insert语句 当进行数据的insert操作的时候，可以考虑采用以下几种优化方案。
+如果需要同时对一张表插入很多行数据时，应该尽量使用多个值表的insert语句，这种方式将大大的缩减客户端与数据库之间的连接、关闭等消耗。使得效率比分开执行的单个insert语句快。
+示例， 原始方式为：
+insert into tb_test values(1,&amp;#39;Tom&amp;#39;); insert into tb_test values(2,&amp;#39;Cat&amp;#39;); insert into tb_test values(3,&amp;#39;Jerry&amp;#39;); 优化后的方案为 ：
+insert into tb_test values(1,&amp;#39;Tom&amp;#39;),(2,&amp;#39;Cat&amp;#39;)，(3,&amp;#39;Jerry&amp;#39;); 在事务中进行数据插入。
+start transaction; insert into tb_test values(1,&amp;#39;Tom&amp;#39;); insert into tb_test values(2,&amp;#39;Cat&amp;#39;); insert into tb_test values(3,&amp;#39;Jerry&amp;#39;); commit; 数据有序插入
+insert into tb_test values(4,&amp;#39;Tim&amp;#39;); insert into tb_test values(1,&amp;#39;Tom&amp;#39;); insert into tb_test values(3,&amp;#39;Jerry&amp;#39;); insert into tb_test values(5,&amp;#39;Rose&amp;#39;); insert into tb_test values(2,&amp;#39;Cat&amp;#39;); 优化后
+insert into tb_test values(1,&amp;#39;Tom&amp;#39;); insert into tb_test values(2,&amp;#39;Cat&amp;#39;); insert into tb_test values(3,&amp;#39;Jerry&amp;#39;); insert into tb_test values(4,&amp;#39;Tim&amp;#39;); insert into tb_test values(5,&amp;#39;Rose&amp;#39;); 2.</description>
+    </item>
+    <item>
+      <title>关于mysql InnoDB hash与B&#43;tree的区别</title>
+      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql-innodb-hash%E4%B8%8Eb-tree%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Fri, 26 Nov 2021 13:56:39 +0000</pubDate>
+      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql-innodb-hash%E4%B8%8Eb-tree%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>区别： 1.hash不支持最左原则，b+tree支持。因为hash的联合查询是这样，比如where a=1 and b=2，是把 a=1 and b=2转成一个hash码来进行查询，如果换成 b=2 and a=1，那么hash码将完全不同，索引失效。
+2.hash不支持范围查询，因为hash是无序的，和b+tree不一样，b树是有序的
+3.hash不支持order by，因为是无序的
+4.hash不支持模糊查询
+5.如果是等值查询，那么哈希索引明显有绝对优势，hash在等值查询上效率比btree高，因为hash可以根据查询条件直接找到需要的数据，但是在有大量重复键值情况下，哈希索引的效率也是极低的，因为存在所谓的哈希碰撞问题。</description>
+    </item>
+    <item>
+      <title>关于mysql事务的概念</title>
+      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Wed, 24 Nov 2021 10:23:01 +0000</pubDate>
+      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
+      <description>在MySQL中只有使用了 Innodb 数据库引擎的数据库或表才支持事务。 mysql的事务可以理解成用来维护数据库表的完整性。 mysql事务的四个特点 原子性 : 一个事务（transaction）中的所有操作，要么全部完成，要么全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样 一致性 : 在事务开始之前和事务结束以后，数据库的完整性没有被破坏。 隔离性 : 数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括读未提交（Read uncommitted）、读提交（read committed）、可重复读（repeatable read）和串行化（Serializable）。 持久性 : 事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。 参考链接 https://www.runoob.com/mysql/mysql-transaction.html </description>
+    </item>
+    <item>
+      <title>关于mysql的部分概念</title>
+      <link>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Thu, 18 Nov 2021 16:48:28 +0000</pubDate>
+      <guid>http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
+      <description>索引 可以理解成:索引就是mysql高速获取数据的一种数据结构。 聚集索引、复合索引、前缀索引、唯一索引默认都是使用 B+tree 索引，统称为 索引。 MySql索引数据结构对经典的B+Tree进行了优化。在原B+Tree的基础上，增加一个指向相邻叶子节点的链表指针，就形成了带有顺序指针的B+Tree，提高区间访问的性能。 B+树数据存叶子节点。索引存根节点。 优势 1） 类似于书籍的目录索引，提高数据检索的效率，降低数据库的IO成本。 2） 通过索引列对数据进行排序，降低数据排序的成本，降低CPU的消耗。 劣势 1） 实际上索引也是一张表，该表中保存了主键与索引字段，并指向实体类的记录，所以索引列也是要占用空间的。 2） 虽然索引大大提高了查询效率，同时却也降低更新表的速度，如对表进行INSERT、UPDATE、DELETE。因为更新表时，MySQL 不仅要保存数据，还要保存一下索引文件每次更新添加了索引列的字段，都会调整因为更新所带来的键值变化后的索引信息。 索引设计原则 索引的设计可以遵循一些已有的原则，创建索引的时候请尽量考虑符合这些原则，便于提升索引的使用效率，更高效的使用索引。 对查询频次较高，且数据量比较大的表建立索引。 索引字段的选择，最佳候选列应当从where子句的条件中提取，如果where子句中的组合比较多，那么应当挑选最常用、过滤效果最好的列的组合。 使用唯一索引，区分度越高，使用索引的效率越高。 索引可以有效的提升查询数据的效率，但索引数量不是多多益善，索引越多，维护索引的代价自然也就水涨船高。对于插入、更新、删除等DML操作比较频繁的表来说，索引过多，会引入相当高的维护代价，降低DML操作的效率，增加相应操作的时间消耗。另外索引过多的话，MySQL也会犯选择困难病，虽然最终仍然会找到一个可用的索引，但无疑提高了选择的代价。 使用短索引，索引创建之后也是使用硬盘来存储的，因此提升索引访问的I/O效率，也可以提升总体的访问效率。假如构成索引的字段总长度比较短，那么在给定大小的存储块内可以存储更多的索引值，相应的可以有效的提升MySQL访问索引的I/O效率。 利用最左前缀，N个列组合而成的组合索引，那么相当于是创建了N个索引，如果查询时where子句中使用了组成该索引的前几个字段，那么这条查询SQL可以利用组合索引来提升查询效率。 避免索引失效 全匹配原则。 最左前缀法则。 在最左前缀法则的基础上，范围查询右边的列，不会使用索引。 不要在索引列上进行运算操作， 索引将失效。 字符串类型不加单引号查询， 索引将失效。 尽量使用覆盖索引，避免使用select *（避免回表查询 什么是回表查询:mysql的索引是一个链子 在查找数据的时候找的是链子上面的索引，在找到链子的东西，select * 通过链子的索引的东西再去数据库表把整条找出来，这就叫索引回表。 避免回表查询：在建立复合索引时尽量把）； 避免or跟索引条件连用 如果仅仅是尾部模糊匹配（like &amp;lsquo;str%&amp;rsquo;），索引不会失效。如果是头部模糊匹配，索引失效。（用覆盖索引能避免模糊查询失效） 如果MySQL评估使用索引比全表更慢，则不使用索引。 单列索引和复合索引。尽量使用复合索引，而少使用单列索引 。 存储过程和函数 存储过程和函数概述 存储过程和函数是 事先经过编译并存储在数据库中的一段 SQL 语句的集合，调用存储过程和函数可以简化应用开发人员的很多工作，减少数据在数据库和应用服务器之间的传输，对于提高数据处理的效率是有好处的。 存储过程和函数的区别在于函数必须有返回值，而存储过程没有。 函数 ： 是一个有返回值的过程 ； 过程 ： 是一个没有返回值的函数 ； 各种存储引擎特性 下面重点介绍几种常用的存储引擎， 并对比各个存储引擎之间的区别， 如下表所示 ： 特点 InnoDB MyISAM MEMORY MERGE NDB 存储限制 64TB 有 有 没有 有 事务安全 ==支持== 锁机制 ==行锁(适合高并发)== ==表锁== 表锁 表锁 行锁 B树索引 支持 支持 支持 支持 支持 哈希索引 支持 全文索引 支持(5.</description>
+    </item>
+    <item>
+      <title>linux上使用mysql</title>
+      <link>http://localhost:1313/2021/linux%E4%B8%8A%E4%BD%BF%E7%94%A8mysql/</link>
+      <pubDate>Wed, 17 Nov 2021 18:35:27 +0000</pubDate>
+      <guid>http://localhost:1313/2021/linux%E4%B8%8A%E4%BD%BF%E7%94%A8mysql/</guid>
+      <description>查看Centos系统是否自带mysql安装包 rpm -qa ｜ grep -i mysql 卸载Centos系统是否自带mysql安装包 rpm -e 安装包名称 --nodeps </description>
+    </item>
+    <item>
+      <title>mysql count(1)与select TABLE_ROWS from information_schema的区别</title>
+      <link>http://localhost:1313/2021/mysql-count-1-%E4%B8%8Eselect-table-rows-from-information-schema%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Tue, 16 Nov 2021 15:14:41 +0000</pubDate>
+      <guid>http://localhost:1313/2021/mysql-count-1-%E4%B8%8Eselect-table-rows-from-information-schema%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>数据库表的准确值（缺点在数据量很大的时候即使加了索引 查询所需时间依旧比较长） SELECT count(1) as total FROM test_user; table_rows只是估算值，比起count，该查询所需时间极少，对于千万级别数据量的表（大约1s左右），很有用的 #TABLE_NAME为表名 TABLE_SCHEMA为数据库名 select TABLE_ROWS from information_schema.TABLES where TABLE_NAME=&amp;#39;test_user&amp;#39; AND TABLE_SCHEMA = &amp;#39;TestMysql&amp;#39;; </description>
+    </item>
+    <item>
+      <title>mysql 脚本生成百万条数据</title>
+      <link>http://localhost:1313/2021/mysql-%E8%84%9A%E6%9C%AC%E7%94%9F%E5%AD%98%E7%99%BE%E4%B8%87%E8%B7%B3%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Tue, 16 Nov 2021 14:37:00 +0000</pubDate>
+      <guid>http://localhost:1313/2021/mysql-%E8%84%9A%E6%9C%AC%E7%94%9F%E5%AD%98%E7%99%BE%E4%B8%87%E8%B7%B3%E6%95%B0%E6%8D%AE/</guid>
+      <description>创建内存表 CREATE TABLE `test_user_memory` ( `id` int(11) NOT NULL AUTO_INCREMENT comment &amp;#39;主键id&amp;#39;, `user_id` varchar(36) NOT NULL comment &amp;#39;用户id&amp;#39;, `user_name` varchar(30) NOT NULL comment &amp;#39;用户名称&amp;#39;, `phone` varchar(20) NOT NULL comment &amp;#39;手机号码&amp;#39;, `lan_id` int(9) NOT NULL comment &amp;#39;本地网&amp;#39;, `region_id` int(9) NOT NULL comment &amp;#39;区域&amp;#39;, `create_time` datetime NOT NULL comment &amp;#39;创建时间&amp;#39;, PRIMARY KEY (`id`), KEY `idx_user_id` (`user_id`) ) ENGINE=MEMORY DEFAULT CHARSET=utf8mb4; 创建普通表 CREATE TABLE `test_user` ( `id` int(11) NOT NULL AUTO_INCREMENT comment &amp;#39;主键id&amp;#39;, `user_id` varchar(36) NOT NULL comment &amp;#39;用户id&amp;#39;, `user_name` varchar(30) NOT NULL comment &amp;#39;用户名称&amp;#39;, `phone` varchar(20) NOT NULL comment &amp;#39;手机号码&amp;#39;, `lan_id` int(9) NOT NULL comment &amp;#39;本地网&amp;#39;, `region_id` int(9) NOT NULL comment &amp;#39;区域&amp;#39;, `create_time` datetime NOT NULL comment &amp;#39;创建时间&amp;#39;, PRIMARY KEY (`id`), KEY `idx_user_id` (`user_id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 生成手机号码的时候要用到 生成n个随机数字 DELIMITER $$ CREATE FUNCTION randNum(n int) RETURNS VARCHAR(255) BEGIN DECLARE chars_str varchar(20) DEFAULT &amp;#39;0123456789&amp;#39;; DECLARE return_str varchar(255) DEFAULT &amp;#39;&amp;#39;; DECLARE i INT DEFAULT 0; WHILE i &amp;lt; n DO SET return_str = concat(return_str,substring(chars_str , FLOOR(1 + RAND()*10 ),1)); SET i = i +1; END WHILE; RETURN return_str; END $$ 创建生成号码函数 #生成随机手机号码 #定义常用的手机头 130 131 132 133 134 135 136 137 138 139 186 187 189 151 157 #SET starts = 1+floor(rand()*15)*4; 截取字符串的开始是从 1、5、9、13 .</description>
+    </item>
+  </channel>
+</rss>

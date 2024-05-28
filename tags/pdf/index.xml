@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pdf on 可以吃饭了吗</title>
+    <link>http://localhost:1313/tags/pdf/</link>
+    <description>Recent content in Pdf on 可以吃饭了吗</description>
+    <image>
+      <title>可以吃饭了吗</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
+    <language>zh</language>
+    <copyright>2021-2024 可以吃饭了吗</copyright>
+    <lastBuildDate>Fri, 27 May 2022 13:21:32 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>个人整理pdf</title>
+      <link>http://localhost:1313/2021/%E4%B8%AA%E4%BA%BA%E6%95%B4%E7%90%86pdf/</link>
+      <pubDate>Fri, 27 May 2022 13:21:32 +0000</pubDate>
+      <guid>http://localhost:1313/2021/%E4%B8%AA%E4%BA%BA%E6%95%B4%E7%90%86pdf/</guid>
+      <description>1.nacos部署 2.redis面试题 3.RocketMQ 4.如何访问Redis中的海量数据 5.尚硅谷大数据技术之Kafka 6.虚拟机安装lnmp(工业大脑安装向导) 7.面试题MySQL篇 8.面试题高并发与大数据 9.面试题高并发和大流量解决方案篇 10.Rabbitmq </description>
+    </item>
+  </channel>
+</rss>

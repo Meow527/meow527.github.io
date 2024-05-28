@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kibana on 可以吃饭了吗</title>
+    <link>http://localhost:1313/tags/kibana/</link>
+    <description>Recent content in Kibana on 可以吃饭了吗</description>
+    <image>
+      <title>可以吃饭了吗</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
+    <language>zh</language>
+    <copyright>2021-2024 可以吃饭了吗</copyright>
+    <lastBuildDate>Mon, 25 Apr 2022 14:48:51 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/kibana/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java搭建ELK</title>
+      <link>http://localhost:1313/2021/java%E6%90%AD%E5%BB%BAelk/</link>
+      <pubDate>Mon, 25 Apr 2022 14:48:51 +0000</pubDate>
+      <guid>http://localhost:1313/2021/java%E6%90%AD%E5%BB%BAelk/</guid>
+      <description>1.安装java的JDK 查看是否存在java环境 rpm -qa | grep java rpm -qa | grep jdk rpm -qa | grep gcj 如果安装过想要卸载java重新安装 rpm -qa | grep java ｜ xargs rpm -e --nodeps 查看JDK yum list java-1.8* 安装JDK yum install java-1.8.0-openjdk* -y 检查java是否安装成功 java -version 2.安装ElasticSearch 下载包 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.12.0-x86_64.rpm 安装 sudo rpm --install elasticsearch-7.12.0-x86_64.rpm 查看安装位置(通常安装在/usr/share/elasticsearch/) rpm -ql elasticsearch 修改ES数据和日志储存路径 # 创建目录，用于存储elasticsearch数据 mkdir -p /data/elasticsearch/datadir # 修改目录权限 chown -R elasticsearch:elasticsearch /data/elasticsearch/datadir # 创建日志目录 mkdir -p /data/elasticsearch/logdir # 修改目录权限 chown -R elasticsearch:elasticsearch /data/elasticsearch/logdir 修改ES的配置文件 vi /etc/elasticsearch/elasticsearch.</description>
+    </item>
+  </channel>
+</rss>

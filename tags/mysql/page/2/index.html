@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Mysql | 可以吃饭了吗</title>
+<meta name="keywords" content="">
+<meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
+<meta name="author" content="Jiaxin">
+<link rel="canonical" href="http://localhost:1313/tags/mysql/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/mysql/index.xml">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/tags/mysql/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  
+
+<meta property="og:title" content="Mysql" />
+<meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/tags/mysql/" />
+<meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
+<meta name="twitter:title" content="Mysql"/>
+<meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="可以吃饭了吗 (Alt + H)">可以吃饭了吗</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/en/" title="English"
+                            aria-label="English">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/friends/" title="友链">
+                    <span>友链</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="查找">
+                    <span>查找</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
+  <h1>
+    Mysql
+    <a href="/tags/mysql/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">关于mysql的部分概念
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>索引 可以理解成:索引就是mysql高速获取数据的一种数据结构。 聚集索引、复合索引、前缀索引、唯一索引默认都是使用 B&#43;tree 索引，统称为 索引。 MySql索引数据结构对经典的B&#43;Tree进行了优化。在原B&#43;Tree的基础上，增加一个指向相邻叶子节点的链表指针，就形成了带有顺序指针的B&#43;Tree，提高区间访问的性能。 B&#43;树数据存叶子节点。索引存根节点。 优势 1） 类似于书籍的目录索引，提高数据检索的效率，降低数据库的IO成本。 2） 通过索引列对数据进行排序，降低数据排序的成本，降低CPU的消耗。 劣势 1） 实际上索引也是一张表，该表中保存了主键与索引字段，并指向实体类的记录，所以索引列也是要占用空间的。 2） 虽然索引大大提高了查询效率，同时却也降低更新表的速度，如对表进行INSERT、UPDATE、DELETE。因为更新表时，MySQL 不仅要保存数据，还要保存一下索引文件每次更新添加了索引列的字段，都会调整因为更新所带来的键值变化后的索引信息。 索引设计原则 索引的设计可以遵循一些已有的原则，创建索引的时候请尽量考虑符合这些原则，便于提升索引的使用效率，更高效的使用索引。 对查询频次较高，且数据量比较大的表建立索引。 索引字段的选择，最佳候选列应当从where子句的条件中提取，如果where子句中的组合比较多，那么应当挑选最常用、过滤效果最好的列的组合。 使用唯一索引，区分度越高，使用索引的效率越高。 索引可以有效的提升查询数据的效率，但索引数量不是多多益善，索引越多，维护索引的代价自然也就水涨船高。对于插入、更新、删除等DML操作比较频繁的表来说，索引过多，会引入相当高的维护代价，降低DML操作的效率，增加相应操作的时间消耗。另外索引过多的话，MySQL也会犯选择困难病，虽然最终仍然会找到一个可用的索引，但无疑提高了选择的代价。 使用短索引，索引创建之后也是使用硬盘来存储的，因此提升索引访问的I/O效率，也可以提升总体的访问效率。假如构成索引的字段总长度比较短，那么在给定大小的存储块内可以存储更多的索引值，相应的可以有效的提升MySQL访问索引的I/O效率。 利用最左前缀，N个列组合而成的组合索引，那么相当于是创建了N个索引，如果查询时where子句中使用了组成该索引的前几个字段，那么这条查询SQL可以利用组合索引来提升查询效率。 避免索引失效 全匹配原则。 最左前缀法则。 在最左前缀法则的基础上，范围查询右边的列，不会使用索引。 不要在索引列上进行运算操作， 索引将失效。 字符串类型不加单引号查询， 索引将失效。 尽量使用覆盖索引，避免使用select *（避免回表查询 什么是回表查询:mysql的索引是一个链子 在查找数据的时候找的是链子上面的索引，在找到链子的东西，select * 通过链子的索引的东西再去数据库表把整条找出来，这就叫索引回表。 避免回表查询：在建立复合索引时尽量把）； 避免or跟索引条件连用 如果仅仅是尾部模糊匹配（like ‘str%’），索引不会失效。如果是头部模糊匹配，索引失效。（用覆盖索引能避免模糊查询失效） 如果MySQL评估使用索引比全表更慢，则不使用索引。 单列索引和复合索引。尽量使用复合索引，而少使用单列索引 。 存储过程和函数 存储过程和函数概述 存储过程和函数是 事先经过编译并存储在数据库中的一段 SQL 语句的集合，调用存储过程和函数可以简化应用开发人员的很多工作，减少数据在数据库和应用服务器之间的传输，对于提高数据处理的效率是有好处的。 存储过程和函数的区别在于函数必须有返回值，而存储过程没有。 函数 ： 是一个有返回值的过程 ； 过程 ： 是一个没有返回值的函数 ； 各种存储引擎特性 下面重点介绍几种常用的存储引擎， 并对比各个存储引擎之间的区别， 如下表所示 ： 特点 InnoDB MyISAM MEMORY MERGE NDB 存储限制 64TB 有 有 没有 有 事务安全 ==支持== 锁机制 ==行锁(适合高并发)== ==表锁== 表锁 表锁 行锁 B树索引 支持 支持 支持 支持 支持 哈希索引 支持 全文索引 支持(5....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-11-18 16:48:28 +0000 UTC'>十一月 18, 2021</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;Jiaxin</footer>
+  <a class="entry-link" aria-label="post link to 关于mysql的部分概念" href="http://localhost:1313/2021/%E5%85%B3%E4%BA%8Emysql%E7%9A%84%E6%A6%82%E5%BF%B5/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">linux上使用mysql
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>查看Centos系统是否自带mysql安装包 rpm -qa ｜ grep -i mysql 卸载Centos系统是否自带mysql安装包 rpm -e 安装包名称 --nodeps </p>
+  </div>
+  <footer class="entry-footer"><span title='2021-11-17 18:35:27 +0000 UTC'>十一月 17, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Jiaxin</footer>
+  <a class="entry-link" aria-label="post link to linux上使用mysql" href="http://localhost:1313/2021/linux%E4%B8%8A%E4%BD%BF%E7%94%A8mysql/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">mysql count(1)与select TABLE_ROWS from information_schema的区别
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>数据库表的准确值（缺点在数据量很大的时候即使加了索引 查询所需时间依旧比较长） SELECT count(1) as total FROM test_user; table_rows只是估算值，比起count，该查询所需时间极少，对于千万级别数据量的表（大约1s左右），很有用的 #TABLE_NAME为表名 TABLE_SCHEMA为数据库名 select TABLE_ROWS from information_schema.TABLES where TABLE_NAME=&#39;test_user&#39; AND TABLE_SCHEMA = &#39;TestMysql&#39;; </p>
+  </div>
+  <footer class="entry-footer"><span title='2021-11-16 15:14:41 +0000 UTC'>十一月 16, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Jiaxin</footer>
+  <a class="entry-link" aria-label="post link to mysql count(1)与select TABLE_ROWS from information_schema的区别" href="http://localhost:1313/2021/mysql-count-1-%E4%B8%8Eselect-table-rows-from-information-schema%E7%9A%84%E5%8C%BA%E5%88%AB/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">mysql 脚本生成百万条数据
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>创建内存表 CREATE TABLE `test_user_memory` ( `id` int(11) NOT NULL AUTO_INCREMENT comment &#39;主键id&#39;, `user_id` varchar(36) NOT NULL comment &#39;用户id&#39;, `user_name` varchar(30) NOT NULL comment &#39;用户名称&#39;, `phone` varchar(20) NOT NULL comment &#39;手机号码&#39;, `lan_id` int(9) NOT NULL comment &#39;本地网&#39;, `region_id` int(9) NOT NULL comment &#39;区域&#39;, `create_time` datetime NOT NULL comment &#39;创建时间&#39;, PRIMARY KEY (`id`), KEY `idx_user_id` (`user_id`) ) ENGINE=MEMORY DEFAULT CHARSET=utf8mb4; 创建普通表 CREATE TABLE `test_user` ( `id` int(11) NOT NULL AUTO_INCREMENT comment &#39;主键id&#39;, `user_id` varchar(36) NOT NULL comment &#39;用户id&#39;, `user_name` varchar(30) NOT NULL comment &#39;用户名称&#39;, `phone` varchar(20) NOT NULL comment &#39;手机号码&#39;, `lan_id` int(9) NOT NULL comment &#39;本地网&#39;, `region_id` int(9) NOT NULL comment &#39;区域&#39;, `create_time` datetime NOT NULL comment &#39;创建时间&#39;, PRIMARY KEY (`id`), KEY `idx_user_id` (`user_id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 生成手机号码的时候要用到 生成n个随机数字 DELIMITER $$ CREATE FUNCTION randNum(n int) RETURNS VARCHAR(255) BEGIN DECLARE chars_str varchar(20) DEFAULT &#39;0123456789&#39;; DECLARE return_str varchar(255) DEFAULT &#39;&#39;; DECLARE i INT DEFAULT 0; WHILE i &lt; n DO SET return_str = concat(return_str,substring(chars_str , FLOOR(1 &#43; RAND()*10 ),1)); SET i = i &#43;1; END WHILE; RETURN return_str; END $$ 创建生成号码函数 #生成随机手机号码 #定义常用的手机头 130 131 132 133 134 135 136 137 138 139 186 187 189 151 157 #SET starts = 1&#43;floor(rand()*15)*4; 截取字符串的开始是从 1、5、9、13 ....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-11-16 14:37:00 +0000 UTC'>十一月 16, 2021</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;Jiaxin</footer>
+  <a class="entry-link" aria-label="post link to mysql 脚本生成百万条数据" href="http://localhost:1313/2021/mysql-%E8%84%9A%E6%9C%AC%E7%94%9F%E5%AD%98%E7%99%BE%E4%B8%87%E8%B7%B3%E6%95%B0%E6%8D%AE/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/tags/mysql/">
+      «&nbsp;上一页&nbsp;1/2
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>© 2021-2024 可以吃饭了吗</span> · 
+
+    <span>
+        Powered by
+        <a>ಥ_ಥ</a> &
+        <a href="https://blog.liangjiaxin.cn" rel="noopener" target="_blank">Jiaxin</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

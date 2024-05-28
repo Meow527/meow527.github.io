@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>微信小程序 on 可以吃饭了吗</title>
+    <link>http://localhost:1313/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+    <description>Recent content in 微信小程序 on 可以吃饭了吗</description>
+    <image>
+      <title>可以吃饭了吗</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
+    <language>zh</language>
+    <copyright>2021-2024 可以吃饭了吗</copyright>
+    <lastBuildDate>Fri, 05 Nov 2021 14:34:56 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>h5跳转小程序</title>
+      <link>http://localhost:1313/2021/h5%E8%B7%B3%E8%BD%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Fri, 05 Nov 2021 14:34:56 +0000</pubDate>
+      <guid>http://localhost:1313/2021/h5%E8%B7%B3%E8%BD%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
+      <description>PHP 后段代码 1.校验微信JSSDK 具体代码 微信公众号h5跳转小程序的ticket是用微信公众号的access_token生成的（小程序这边的ticket都是用微信公众号的appid跟密钥） &amp;lt;?php namespace app\wechat\controller; use think\Controller; use think\Db; use app\wechat\controller\Token; define(&amp;#39;APPID&amp;#39;, &amp;#39;微信公众号appid&amp;#39;); define(&amp;#39;APPSERCET&amp;#39;, &amp;#39;微信公众号密钥&amp;#39;); Class WxMini extends Controller{ public static function http_request($url,$data = null){ $curl = curl_init(); curl_setopt($curl, CURLOPT_URL, $url); curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, FALSE); curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, FALSE); if (!empty($data)){ curl_setopt($curl, CURLOPT_POST, 1); curl_setopt($curl, CURLOPT_POSTFIELDS, $data); } curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); $output = curl_exec($curl); curl_close($curl); return $output; } public function getTicket(){ //获取ticket $Ticket = Db::table(&amp;#34;mxjk_access_token&amp;#34;)-&amp;gt;where([&amp;#39;name&amp;#39;=&amp;gt;&amp;#34;ticket&amp;#34;,&amp;#39;id&amp;#39;=&amp;gt;2])-&amp;gt;find(); $now = time(); if($now &amp;gt; $Ticket[&amp;#39;expires_in&amp;#39;]){ //重新申请token $token = new Token(); $access_token = $token-&amp;gt;getAccessToken(); $url = &amp;#34;https://api.</description>
+    </item>
+  </channel>
+</rss>
